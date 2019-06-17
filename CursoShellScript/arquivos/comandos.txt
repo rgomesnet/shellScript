@@ -1,0 +1,500 @@
+ 1893  cd test/
+ 1894  ls
+ 1895  dotnet new xunit
+ 1896  dotnte add reference ../src/src.csproj 
+ 1897  dotnet add reference ../src/src.csproj 
+ 1898  dotnet build
+ 1899  dotnet test test.csproj 
+ 1900  dotnet build test.csproj 
+ 1901  cd ..
+ 1902  ls
+ 1903  code . -r
+ 1904  dotnet test test/
+ 1905  code . -r
+ 1906  dotnet test test/
+ 1907  code . -r
+ 1908  dotnet test test/
+ 1909  ls
+ 1910  cd ..
+ 1911  su -
+ 1912  ping google.com.br
+ 1913  su -c 'reboot'
+ 1914  su -
+ 1915  exit
+ 1916  su -
+ 1917  mkdir exercicios-js
+ 1918  cd exercicios-js/
+ 1919  ls
+ 1920  code . -r
+ 1921  cd sources/
+ 1922  mkdir testeBoolean
+ 1923  cd testeBoolean/
+ 1924  dotnet new console
+ 1925  vim Program.cs 
+ 1926  dotnet build 
+ 1927  dotnet run
+ 1928  vim Program.cs 
+ 1929  cd sources/
+ 1930  cd testeBoolean/
+ 1931  ls
+ 1932  vim Program.cs 
+ 1933  dotnet run
+ 1934  vim Program.cs 
+ 1935  dotnet run
+ 1936  vim Program.cs 
+ 1937  dotnet run
+ 1938  mkdir fundamentos
+ 1939  cd fundamentos/
+ 1940  touch organizacao.js
+ 1941  touch comentarios.j
+ 1942  mv comentarios.j comentarios.js
+ 1943  touch variaveis.js
+ 1944  mv variaveisEConstantes.js
+ 1945  mv variaveis.js variaveisEConstantes.js
+ 1946  clear
+ 1947  node variaveisEConstantes.js 
+ 1948  touch numeros.js
+ 1949  touch strings.js
+ 1950  touch templateString.js
+ 1951  touch boolean.js
+ 1952  touch array.js
+ 1953  touch objetos.js
+ 1954  clear
+ 1955  touch funcoes.js
+ 1956  mv funcoes.js funcaoEmQuasetudo.js
+ 1957  touch funcao1.js
+ 1958  touch funcao2.js
+ 1959  touch usandovar1.js
+ 1960  touch usandovar2.js
+ 1961  touch usandolet1.js
+ 1962  touch usandoVarEmLoop1.js
+ 1963  touch usandoLetEmLoop1.js
+ 1964  touch usandoVarEmLoop2.js
+ 1965  touch usandoLetEmLoop2.js
+ 1966  touch hoisting.js
+ 1967  touch objeto2.js
+ 1968  ls
+ 1969  mv *.js fundamentos
+ 1970  clear
+ 1971  cd fundamentos/
+ 1972  ls
+ 1973  touch parNomeValor.js
+ 1974  cd sources/
+ 1975  ls
+ 1976  mkdir udemy
+ 1977  mv curso-web udemy/
+ 1978  cd udemy/
+ 1979  mkdir shellScript
+ 1980  cd shellScript/
+ 1981  ls
+ 1982  touch destructuring.js
+ 1983  touch destructuring2.js
+ 1984  touch destructuring3.js
+ 1985  touch destructuring4.js
+ 1986  touch relacionais.js
+ 1987  touch logicos.js
+ 1988  touch unarios.js
+ 1989  touch ternarios.js
+ 1990  touch contexto.js
+ 1991  touch trycath.js
+ 1992  cd ...
+ 1993  cd  ..
+ 1994  clear
+ 1995  mkdir estruturaControle
+ 1996  cd estruturaControle/
+ 1997  code . -r
+ 1998  cd ..
+ 1999  clear
+ 2000  code . -r
+ 2001  dpkg -l | grep vim 
+ 2002  tar --help
+ 2003  tar --help | grep '-f'
+ 2004  tar --help | grep -f
+ 2005  tar --help | more
+ 2006  pwd
+ 2007  cd sources/
+ 2008  cd udemy/
+ 2009  cd shellScript/
+ 2010  cp ~rgomes/Downloads/Arquivos-Curso-ShellScript.tgz .
+ 2011  ls
+ 2012  tar xzvf Arquivos-Curso-ShellScript.tgz 
+ 2013  clear
+ 2014  ls
+ 2015  rm -rf Arquivos-Curso-ShellScript.tgz 
+ 2016  clear
+ 2017  ls
+ 2018  cd CursoShellScript/
+ 2019  ls
+ 2020  cd arquivos/
+ 2021  ls
+ 2022  cat alunos2.txt 
+ 2023  cat alunos3.txt 
+ 2024  cat alunos-temp.txt 
+ 2025  clae
+ 2026  cd ..
+ 2027  clear
+ 2028  cd ..
+ 2029  clear
+ 2030  echo $0
+ 2031  echo $SHELL
+ 2032  tail /etc/passwd
+ 2033  cd /usr/bin/local
+ 2034  clear
+ 2035  tail /etc/passwd
+ 2036  ls -l /usr/bin/
+ 2037  su -
+ 2038  clear
+ 2039  tail /etc/passwd
+ 2040  tail /etc/passwd | grep local
+ 2041  su -
+ 2042  clear
+ 2043  cd
+ 2044  ls -ltr
+ 2045  ls -1
+ 2046  clear
+ 2047  ls -l
+ 2048  ls -1
+ 2049  clear
+ 2050  ls -1
+ 2051  ls -2
+ 2052  ls -0
+ 2053  ls -1
+ 2054  clear
+ 2055  ps axu
+ 2056  ps axu | more
+ 2057  clear
+ 2058  cd sources/udemy/shellScript/CursoShellScript/
+ 2059  ls
+ 2060  touch teste
+ 2061  ls -l
+ 2062  touch teste
+ 2063  ls -l
+ 2064  touch teste
+ 2065  ls -l
+ 2066  echo linux shell script 
+ 2067  echo "linux shell script"
+ 2068  clear
+ 2069  echo -n "linux shell script" 
+ 2070  echo -e "curso shell\t script"
+ 2071  echo -e "curso\n shell\t script"
+ 2072  echo -e "curso\n shell\t\n script"
+ 2073  echo -e "\tcurso\n shell\t\n script"
+ 2074  echo -e "\ncurso\n shell\t\n script"
+ 2075  echo -e " curso\n shell\t\n script"
+ 2076  echo -e "curso\nshell\t\nscript"
+ 2077  echo -e "curso\nshell\n\tscript"
+ 2078  echo -e "curso\nshell\nscript"
+ 2079  cear
+ 2080  clear
+ 2081  sleep 
+ 2082  sleep 10
+ 2083  sleep 3
+ 2084  cd arquivos/
+ 2085  clear
+ 2086  ls
+ 2087  ls -
+ 2088  ls -1
+ 2089  cat alunos.txt 
+ 2090  cat alunos2.txt 
+ 2091  cat -b alunos2.txt 
+ 2092  cat -n alunos2.txt 
+ 2093  cat -a alunos2.txt 
+ 2094  cat -A alunos2.txt 
+ 2095  cat arquivolongo.txt 
+ 2096  tail arquivolongo.txt 
+ 2097  clear
+ 2098  tail -5 arquivolongo.txt 
+ 2099  tail -1 arquivolongo.txt 
+ 2100  tail -2 arquivolongo.txt 
+ 2101  tail -3 arquivolongo.txt 
+ 2102  tail -n3 arquivolongo.txt 
+ 2103  head arquivolongo.txt 
+ 2104  clear
+ 2105  head -n5 arquivolongo.txt 
+ 2106  head -n1 arquivolongo.txt 
+ 2107  head -c10 arquivolongo.txt 
+ 2108  head -c10 -e arquivolongo.txt 
+ 2109  head -c10 arquivolongo.txt 
+ 2110  wc
+ 2111  wc arquivolongo.txt 
+ 2112  wc alunos
+ 2113  wc alunos.txt 
+ 2114  wc alunos2.txt 
+ 2115  wc -l alunos2.txt 
+ 2116  wc -w alunos2.txt 
+ 2117  wc -c alunos2.txt 
+ 2118  wc -m alunos2.txt 
+ 2119  wc alunos*
+ 2120  tail -n5 alunos2.txt 
+ 2121  tail -n5 alunos2.txt  | wc -w
+ 2122  clear
+ 2123  tail -n5 alunos2.txt  | wc -w
+ 2124  tail -n5 alunos2.txt | wc -w | echo 
+ 2125  tail -n5 alunos2.txt | wc -w 
+ 2126  sort alunos2.txt 
+ 2127  sort -r alunos2.txt 
+ 2128  sort -k2 alunos2.txt 
+ 2129  clear
+ 2130  sort -k2 alunos2.txt 
+ 2131  sort -k2 -r alunos2.txt 
+ 2132  tail /etc/passwd
+ 2133  clear
+ 2134  tail /etc/passwd
+ 2135  tail /etc/passwd | sort 
+ 2136  tail /etc/passwd | sort -k3
+ 2137  clear
+ 2138  tail /etc/passwd | sort -k3
+ 2139  tail /etc/passwd | sort -k3 -t":"
+ 2140  clear
+ 2141  tail /etc/passwd | sort -k3 -t":" -g
+ 2142  tail /etc/passwd | sort -k3 -t":" -gr
+ 2143  tail /etc/passwd | sort -k3 -t":" -g
+ 2144  cat alunos.txt 
+ 2145  clear
+ 2146  ls
+ 2147  vim alunos.txt 
+ 2148  cat alunos
+ 2149  cat alunos.txt 
+ 2150  uniq alunos
+ 2151  uniq alunos.txt 
+ 2152  sort alunos.txt | uniq
+ 2153  sort alunos.txt | uniq -u
+ 2154  clear
+ 2155  sort alunos.txt | uniq -d
+ 2156  sort alunos.txt | uniq -c
+ 2157  sort alunos.txt | uniq -c | sort 
+ 2158  sort alunos.txt | uniq -c | sort -r
+ 2159  sort alunos.txt | uniq -c | sort -r | tail -n1
+ 2160  sort alunos.txt | uniq -c | sort -r | head -n1
+ 2161  clear
+ 2162  sort alunos.txt | uniq -c | sort -r | head -n1
+ 2163  whatis tr
+ 2164  cat alunos.txt 
+ 2165  cat alunos.txt | tr a e
+ 2166  cat alunos.txt | tr a-z A-Z
+ 2167  sort alunos.txt 
+ 2168  sort alunos.txt | uniq 
+ 2169  sort alunos.txt | uniq -c
+ 2170  sort alunos.txt | uniq -d
+ 2171  uniq --help
+ 2172  sort alunos.txt | uniq -u
+ 2173  sort alunos.txt | uniq -w
+ 2174  clear
+ 2175  tr --help
+ 2176  man uniq
+ 2177  sort --help
+ 2178  clear
+ 2179  sort --help
+ 2180  tail /etc/passwd | sort -k3 -t":" -g
+ 2181  clear
+ 2182  cat alunos2.txt 
+ 2183  cat alunos2.txt | tr ' ' '\t' 
+ 2184  cat alunos2.txt | tr ' ' '\t'  | cat -A
+ 2185  cat alunos2.txt | tr -d ae
+ 2186  cat alunos2.txt | tr -d aei
+ 2187  cat alunos2.txt | tr -d ' '
+ 2188  cat alunos2.txt | tr -d '  '
+ 2189  cat alunos2.txt | tr -d '       '
+ 2190  clear
+ 2191  tr --help
+ 2192  cat alunos2.txt 
+ 2193  clear
+ 2194  cat alunos2.txt 
+ 2195  cat alunos2.txt | cut -c1-c5
+ 2196  cat alunos2.txt | cut -c1-5
+ 2197  cat alunos2.txt | cut -c1,2,3
+ 2198  clear
+ 2199  cat alunos2.txt | cut -c1,2,3
+ 2200  cat alunos2.txt | cut -c1,2,3,5
+ 2201  cat alunos2.txt | cut -c5-
+ 2202  cat alunos2.txt | cut -c5
+ 2203  cat alunos2.txt | cut -c-5
+ 2204  cat alunos2.txt | cut -c1,2,10
+ 2205  ls -l
+ 2206  ls -l > teste.txt
+ 2207* code teste.
+ 2208  ls -l | cut -c-45
+ 2209  ls -l | cut -c45-
+ 2210  ls -l | cut -f 9
+ 2211  ls -l | cut -f9
+ 2212  clear
+ 2213  ls -l
+ 2214  ls -l | cut -d" " -f9
+ 2215  ls -l | cut -d" " -f8
+ 2216  ls -l | cut -d" " -f9
+ 2217  ls -l | cut -d" " -f8-
+ 2218  ls -l | cut -d" " -f9-
+ 2219  clear
+ 2220  ls -l | cut -d" " -f9-
+ 2221  clear
+ 2222  ls -l *.txt 
+ 2223  ls -l *.txt | cut -d" " -f9
+ 2224  ls -l *.txt | cut -d" " -f10
+ 2225  ls -l *.txt | cut -d" " -f11
+ 2226  ls -l *.txt | tr "  " " "
+ 2227  ls -l *.txt | tr "  " ""
+ 2228  ls -l *.txt | tr "  " 
+ 2229  ls -l *.txt | tr "  " " "
+ 2230  ls -l *.txt | tr "  " " " | cut -d" " -f9
+ 2231  ls -l *.txt | tr "  " " " | cut -d" " -f8
+ 2232  ls -l *.txt | tr "  " " " | cut -d" " -f10
+ 2233  clear
+ 2234  tail /etc/passwd | cut -d":" -f1
+ 2235  tail /etc/passwd | cut -d":" -f1-5
+ 2236  tail /etc/passwd | cut -d":" -f1,5
+ 2237  clear
+ 2238  tail /etc/passwd
+ 2239  tail /etc/passwd | cut -d":" -f1,5
+ 2240  clear
+ 2241  diff alunos2.txt alunos3.txt 
+ 2242  clear
+ 2243  diff alunos.txt alunos3.txt 
+ 2244  diff alunos.txt alunos3.txt | cat -A
+ 2245  cd ..
+ 2246  clear
+ 2247  ls
+ 2248  cp -r arquivos arquivos-copia
+ 2249  diff -r arquivos arquivos-copia/
+ 2250  diff -r arquivos Scripts/
+ 2251  cd arquivos
+ 2252  clear
+ 2253  grep arquivolongo.txt 
+ 2254  cat alunos2.txt 
+ 2255  grep Clauda alunos2.txt 
+ 2256  grep Claudia alunos2.txt 
+ 2257  clear
+ 2258  grep Claudia alunos*
+ 2259  grep Ricardo  alunos*
+ 2260  grep "Ricardo Pruden"  alunos*
+ 2261  clear
+ 2262  grep -d Ana alunos2.txt 
+ 2263  grep -c Ana alunos2.txt 
+ 2264  clear
+ 2265  grep -c Ana aluno* 
+ 2266  grep -v Ana alunos2.txt 
+ 2267  grep --help
+ 2268  clear
+ 2269  grep -c Antonio alunos*
+ 2270  clear
+ 2271  whatis sed
+ 2272  cat alunos2.txt 
+ 2273  cat alunos2.txt  | sed '1,3'
+ 2274  sed '1,3' alunos2.txt 
+ 2275  cat alunos2.txt  | sed '1,3 d'
+ 2276  sed '1,3 d' alunos2.txt 
+ 2277  clear
+ 2278  cat alunos2.txt 
+ 2279  sed '1,3 d' alunos2.txt 
+ 2280  sed '1,4 d' alunos2.txt 
+ 2281  sed '/Rafael/d' alunos2.txt 
+ 2282  clear
+ 2283  cat alunos2.txt 
+ 2284  sed '/Rafael/d' alunos2.txt 
+ 2285  sed '/Paulo/Joao/' alunos2.txt 
+ 2286  sed 's/Paulo/Joao/' alunos2.txt 
+ 2287  echo "Curso Linux Shell Script Linux"
+ 2288  clear
+ 2289  echo "Curso Linux Shell Script Linux" | sed 's/Linux/Unix'
+ 2290  echo "Curso Linux Shell Script Linux" | sed 's/Linux/Unix/'
+ 2291  echo "Curso Linux Shell Script Linux" | sed 's/Linux/Unix/g'
+ 2292  echo "Curso Linux Shell Script Linux" | sed 's/ /g'
+ 2293  echo "Curso Linux Shell Script Linux" | sed 's/ //g'
+ 2294  cd
+ 2295  clear
+ 2296  cd sources/udemy/
+ 2297  cd shellScript/
+ 2298  clear
+ 2299  ls
+ 2300  find ./ -name aluno.txt
+ 2301  find ./ -name alunos.txt
+ 2302  find ./ -name aluno
+ 2303  find ./ -name aluno*
+ 2304  clear
+ 2305  find ./ -name alunos*
+ 2306  find ./ -name alunos* | ls -l
+ 2307  find ./ -name alunos* | ls -l {}
+ 2308  find ./ -name alunos* -exec ls -l {}
+ 2309  find ./ -name alunos* -exec ls -l {} \;
+ 2310  find ./ -name alunos* 
+ 2311  find ./ -name alunos* -exec ls -l {} \;
+ 2312  date +%H
+ 2313  clear
+ 2314  date +%M
+ 2315  date +%I
+ 2316  date +%m
+ 2317  date +%D
+ 2318  date +%d
+ 2319  date +%d:%m
+ 2320  date +%d/%m
+ 2321  date +%m/%d
+ 2322  date +%m/%d/y
+ 2323  date +%m/%d/%H
+ 2324  date +%m/%d/%h
+ 2325  date +%m/%d/%y
+ 2326  date +%m/%d/%Y
+ 2327  seq 10
+ 2328  clear
+ 2329  seq 20
+ 2330  seq 0-6
+ 2331  seq 1 60
+ 2332  seq 5 2  30
+ 2333  seq 5 2.7  30
+ 2334  expr 300 + 600
+ 2335  expr
+ 2336  expr --help
+ 2337  clear
+ 2338  expr --help
+ 2339  expr 1 | 0
+ 2340  expr true | false
+ 2341  clear
+ 2342  expr 5 % 2
+ 2343  expr 5 * 2
+ 2344  expr 5 /* 2
+ 2345  expr 5 \* 2
+ 2346  expr 5 \* 2 -2
+ 2347  expr 5 \* 2 - 2
+ 2348  echo 3 + 2 | bc
+ 2349  echo 3 + 2 \* 5 | bc
+ 2350  bc
+ 2351  clear
+ 2352  man bc
+ 2353  clear
+ 2354  echo 1000 + 500 - 259 | bc
+ 2355  ( cd ..; ls -l)
+ 2356  cd ..; ls -l
+ 2357  cd shellScript/
+ 2358  clear
+ 2359  ( cd ..; ls -l)
+ 2360  ls
+ 2361  cd CursoShellScript/
+ 2362  ls
+ 2363  cd arquivos
+ 2364  clear
+ 2365  ls
+ 2366  cat alunos.txt 
+ 2367  cat alunos.txt >> alunos-temp.txt 
+ 2368  rm alunos-temp.txt 
+ 2369  cat alunos.txt >> alunos-temp.txt 
+ 2370  cat alunos-temp.txt 
+ 2371  clear
+ 2372  date > alunos-temp.txt 
+ 2373  cat alunos-temp.txt 
+ 2374  cat >> alunos-temp.txt 
+ 2375  date >> alunos-temp.txt 
+ 2376  cat alunos-temp.txt 
+ 2377  clear
+ 2378  date > alunos-temp.txt 
+ 2379  cat alunos-temp.txt 
+ 2380  date >> alunos-temp.txt 
+ 2381  cat alunos-temp.txt 
+ 2382  ls -l alunos.txt3
+ 2383  ls -l alunos.txt3 > log.out
+ 2384  ls
+ 2385  cat log.out 
+ 2386  ls -l alunos.txt3 2> log.out
+ 2387  cat log.out 
+ 2388  ls /dev/null 
+ 2389  ls /dev/null -l
+ 2390  history | tail -100
+ 2391  history | tail -500
+ 2392  history | tail -500 > comandos.txt

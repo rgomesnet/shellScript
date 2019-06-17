@@ -1,0 +1,227 @@
+1      2  3    4    5                6           7
+rgomes:x:1000:1000:Renato Gomes,,,:/home/rgomes:/bin/bash
+
+
+Tipos de Shell
+---------------
+
+    Bourne Shell (sh)
+    Bourne-Again Shell (bash) -> Já vem como padrão na instalação da maioria das distribuições.
+    Korn Shell (ksh)
+    C Shell (csh)
+
+Dicas
+    01. Qual shell estou utilizando?
+        $ echo $0
+        $ echo $SHELL
+        $ tail /etc/passwd -> Nesse comando, mostra na ulima coluna de cada usuário, qual shell que ele está utilizando.
+
+    02. Imprimindo na tela sem quebra de linha
+        echo -n linux shell script
+
+    03. Respeitando caracteres especiais        
+        echo -e "linux shell \tscript"
+
+    04. Comando sleep, conta o tempo
+        sleep 10
+
+    05. cat 
+    06. Númera as linhas que não estão em branco
+        cat -b arquivo
+
+    06. Númera todas linhas
+        cat -n arquivo
+
+    07. Visualizando caracteres especiais
+        cat -A arquivo
+    
+    08. tac, semelhante ao cat, porém, em disposição do contéudo ao contrário.
+
+    09. tail -2 arquivolongo -> as últimas 2 linhas do arquivo
+
+    10. head arquivolongo -> mostra as primerias 10 linhas do arquivo
+
+    11. head -n5 arquivolongo -> mostra as primeiras 5 linhas do arquivo
+
+    12. head -c10 arquivolongo -> mostras os 10 primeiros caracteres do arquivo
+
+    13. sort arquivo -> ordena o conteudo
+
+    14. sort -r arquivo -> ordena o conteudo de forma contrária
+
+    15. Ordenando pelo segundo índice
+        sort -k2 alunos2.txt
+
+    16. Ordenando pelo 3o. campo e indicando qual o caractere de separação dos campos.
+        O -g considera o valor do campo como númerico, se for numero
+
+        tail /etc/passwd | sort -k3 -t":" -g
+    
+    17. Ordenando o conteudo e removendo os valores repetidos
+        sort alunos.txt | uniq
+
+    18. Mostrando apenas as linhas que não se repete
+        sort alunos.txt | uniq -u
+
+    19. Mostrando apenas as linhas que se repetem
+        sort alunos.txt | uniq -d
+
+    19. Contando as repetições
+        sort alunos.txt | uniq -c
+
+    20. Mostra os campos 1 e 5
+        tail /etc/passwd | cut -d":" -f1,5
+    
+    21. Mostra as diferenças entre os arquivos
+        diff -w alunos.txt alunos3.txt
+
+    22. Mostra as diferenças entre os arquivos, considerando caracteres especiais
+        diff -w alunos.txt alunos3.txt | cat -A
+
+    23. Mostra as diferenças entre os arquivos, ignorando os espaços em branco
+        diff -w alunos.txt alunos3.txt
+    
+    24. Comparando arquivos
+        diff -r diretori01 diretorio02
+    
+    25. Códigos de saída de comando (exit code)
+        De 0 - 255
+        0, signifa sucesso
+        echo $? -> retorna o código do último comando
+
+Instruções condicionais
+    1)
+    if <comando-condicao>
+    then
+        comando1
+        comando2
+    fi
+
+    2)
+    if <comando-condicao>
+    then
+        comando1
+    else
+        comando2
+    fi
+
+    3)
+    if <comando-condicao>
+    then
+        comando1
+    elif <comando-condicao2>
+    then
+        comando2
+    else
+        comando3
+    fi
+
+    Comando test: utilizado para criar uma condição
+        test <expressao>
+
+    Testando valores numéricos:
+        Opção Descrição
+        -eq   Igual (equal)
+        -ne   Diferente (not equal)
+        -gt   Maior que (greater than)
+        -ge   Maior ou igual que (greater equal)
+        -lt   Menor que (lower than)
+        -le   Menor ou igual que (lower equal)
+    
+    Testando strings:
+        Opção Descrição
+         =    Uma string igual a outra
+        !=    Uma string diferente da outra
+        -n    String não nula
+        -z    String nula
+
+    Testando arquivos:
+        Opção Descrição
+        -f    É um arquivo
+        -d    É um diretório
+        -r    Tem permissão de leitura
+        -w    Tem permissão de escrita
+        -x    Tem permissão de execução
+        -s    Possui tamanho maior que zero
+
+    Exemplos:
+        test 50 -gt 100
+        test "$VAR1" -eq 12
+        test -f /tmp/teste   "Existe o arquivo teste?"
+        test "$VAR1" = "$VAR2" "As variáveis são iguais?"
+
+        Ao invés de escrever a palavra test, é possíve utilizar os colchetes:
+        Observe os espaços antes e após o "[" e "]"
+        [ 50 -gt 100 ]
+        [ "$VAR1" -eq 12 ]
+        [ -f /tmp/teste ]
+        [ "$VAR1" = "$VAR2" ]
+
+        Exemplo:
+            if [ 50 -gt 100 ]
+            then
+                echo sucesso
+            else
+                echo insucesso
+            fi
+
+        Negando:
+            if [ ! 50 -gt 100 ]
+            then
+                echo sucesso
+            else
+                echo insucesso
+            fi
+
+        Combiando duas Instruções (&)
+        VAR1=12
+        if [ "$VAR1" -gt 10 -a "$VAR1" -lt 20 ] // o -a representa o AND entre as Instruções
+        then
+            echo sucesso
+        fi
+
+        VAR1=12
+        if [ "$VAR1" -gt 10 -o "$VAR1" -lt 20 ] // o -o representa o OR entre as Instruções
+        then
+            echo sucesso
+        fi
+
+    Comando CASE:
+        case $valor in
+            padrao01)
+                comandos
+                ;;
+            padrao02)
+                comandos
+                ;;
+            *)
+                comandos
+                ;;
+        esac
+
+        Exemplo:
+            case $opcao in
+                1)
+                    echo "Opção incluir:"
+                    ;;
+                2)
+                    echo "Opção Remover:"
+                    ;;
+                *)
+                    echo "Opção Inexistente:"
+                    ;;
+            esac
+        
+        Com expressão regular
+            case $caracter in
+            [0-9])
+                    echo "O caracter informado é um número"
+                    ;;
+            [A-Z])
+                    echo "O caracter informado é uma letra maiúscula"
+                    ;;
+            [a-z])
+                    echo "O caracter informado é uma letra minúscula"
+                    ;;
+            esac
+
